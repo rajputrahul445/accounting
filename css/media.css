@@ -1,0 +1,90 @@
+@media screen and (max-width: 992px){
+	.desktop{display: none;}
+    .mobile{display: block !important; }
+	.brand img {
+        margin: 0 auto;
+    }
+    .topHeader .listInline{
+        gap: 12px;
+    }
+	.brand span{
+		display: none;
+	}
+    .sidebarList li a {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: block;
+        text-align: center;
+    }
+    .sidebarList li a span {
+        display: none;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .brand {
+        padding: 10px;
+    }
+
+    .sidebar {
+        flex-basis: 95px;
+        min-width: 95px;
+    }
+    .rightArea {
+        flex-basis: calc(100% - 95px);
+        max-width: calc(100% - 95px);
+    }
+    .subHeading {
+        font-size: 16px;
+    }
+
+	.colorBtn {
+		padding: 10px 10px;
+		white-space: nowrap;
+	}
+
+	.dashboardContent {
+	    padding: 20px;
+	}
+
+	.topHeader {
+	    padding: 0 20px;
+	}
+
+	.heading {
+	    display: flex;
+	    align-items: center;
+	    font-size: 21px;
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+	.sidebarUserDetails .userImg span {
+		display: none;
+	}
+	
+	.sidebarUserDetails {
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.customtable{
+		margin-top: 25px;
+		padding: 15px;
+	}
+	.overflow{
+		overflow: auto;
+	}
+	.calendar_weekdays div, .calendar_content div {
+		font-size: 12px !important;
+		padding: 8px 0;
+	}
+	
+	.calendar_content div.today:after {
+		width: 25px;
+		height: 25px;
+	}
+	
+}
+@media only screen and (max-width: 767px){
+	
+
+}
