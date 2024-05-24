@@ -73,29 +73,6 @@ input, button {
     border-right: 1px solid rgb(211, 211, 211);
 }
 
-.sidebar.shrink {
-    flex-basis: 95px;
-    min-width: 95px;
-}
-
-.sidebar.shrink + .rightArea {
-    flex-basis: calc(100% - 95px);
-    max-width: calc(100% - 95px);
-}
-
-.sidebar.shrink .sidebarList li a {
-    justify-content: center;
-    flex-wrap: wrap;
-    display: block;
-    text-align: center;
-}
-
-.sidebar.shrink .sidebarList li a span {
-    display: block;
-    font-size: 12px;
-    text-align: center;
-}
-
 .rightArea {
     flex-basis: calc(100% - 250px);
     padding: 0px;
@@ -169,13 +146,19 @@ input, button {
 
 .topHeader {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     height: 70px;
     padding: 0px 30px;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 10px;
 }
-
+img.hamburger {
+    max-width: 40px;
+    background: rgb(244, 245, 247);
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0000001a;
+}
 .topHeader .listInline {
     align-items: center;
     gap: 30px;
@@ -196,25 +179,6 @@ input, button {
     object-fit: cover;
 }
 
-.dropdown-item {
-    font-size: 14px;
-}
-
-li.dropdown em {
-    display: block;
-    color: rgb(143, 148, 152);
-    font-style: normal;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-.transparentBtn {
-    background: transparent;
-    border: none;
-    padding: 0px;
-    box-shadow: none;
-    outline: none !important;
-}
 
 .topHeader li sup {
     width: 16px;
@@ -239,51 +203,19 @@ a.notification {
 .topHeader li {
     position: relative;
 }
-
-.searchBx input {
-    padding: 14px 20px 14px 45px;
-    min-width: 600px;
-    background: rgb(255, 255, 255);
-    border: 1px solid rgb(194, 194, 194);
-    border-radius: 15px;
-    color: rgb(199, 199, 199);
-    font-weight: 400;
-}
-
-.searchBx input::placeholder {
-    color: rgb(199, 199, 199);
-}
-
-.searchBx {
-    position: relative;
-}
-
-.searchBtn {
-    position: absolute;
-    left: 15px;
-    top: 11px;
-    color: rgb(143, 148, 152);
-    opacity: 0.3;
-    font-size: 20px;
-}
-
 .subHeading {
     font-size: 18px;
     font-weight: 700;
     color: rgb(45, 55, 72);
 }
 
-.bootstrap-select .dropdown-toggle:focus {
-    outline: none !important;
-}
 
-.dropdown-toggle.btn-light {
-    font-size: 15px;
-    color: rgb(58, 58, 58);
-    border: 1px solid rgb(229, 229, 229);
-    background: transparent;
-    border-radius: 8px;
-}
+
+
+
+
+
+
 
 .customTable {
     overflow: auto;
@@ -598,9 +530,9 @@ div#calendar_first {
     border-radius: 10px;
 }
 
-.calendar_content div.blank {
+/* .calendar_content div.blank {
     display: none;
-}
+} */
 
 .calendar_content {
     display: flex;
